@@ -1,0 +1,70 @@
+
+@font-face {
+    font-family: 'Mulish-Regular';
+    src: url('../assets/fonts/Mulish-Regular.ttf') format('ttf');
+         font-display: swap;
+         font-style: normal;
+  }
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url('../assets/fonts/Poppins-Bold.woff') format('woff');
+          font-weight: 500;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  .header{
+      font-family: 'Poppins-Bold';
+      font-size:3rem!important;
+      color: #2d2e32 !important;
+      max-width: 35rem;
+  }
+  .header span img{
+    width:4rem;
+  }
+  
+  .par{
+      font-family: 'Mulish-Regular',sans-serif;
+      font-size: large!important;
+      color: rgba(36, 36, 36, 0.603) !important;
+      max-width: 30rem;
+  }
+  .mainContainer{
+    height: 67dvh;
+  }
+  .imgContainer{
+    aspect-ratio: 1;
+    max-width: 25rem;    
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .img{
+    max-width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
+  .iconImage{
+    aspect-ratio: 1;
+    max-width: 4rem;
+  }
+  @media (max-width:1000px) {    
+    .header{
+        font-size: 2.6rem !important;
+        word-break: break-all;}
+    .imgContainer{
+            max-width: 20rem;
+    }
+    .mainContainer{
+        height:auto;
+    }
+
+  }
+  @media (max-width:700px) {    
+    .header{
+        font-size: 2rem !important;
+        word-break: keep-all;
+    }
+    .mainContainer{
+        text-align: center;
+    }
+  }

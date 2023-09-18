@@ -1,0 +1,22 @@
+
+@font-face {
+  font-family: 'Poppins-Variable';
+  src: url('../assets/fonts/Poppins-Medium.woff') format('woff');
+        font-weight: 500;
+       font-display: swap;
+       font-style: normal;
+}
+
+
+.navBrand{
+    font-family: 'Poppins-Variable';
+    font-size: large !important;
+    color: rgb(36, 36, 36) !important;
+    
+}
+
+.navLink{
+    font-family: 'Poppins-Variable';
+    font-size: large!important;
+    color: rgb(36, 36, 36) !important;
+}
