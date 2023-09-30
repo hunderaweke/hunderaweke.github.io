@@ -33,10 +33,35 @@
     height: 67dvh;
   }
   .imgContainer{
-    aspect-ratio: 1;
-    max-width: 25rem;    
+    width: 25rem;
+    height: 25rem;
+    background-size: cover;
+    border: 3px solid rgba(105, 104, 104, 0.603);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url('/src/assets/images/my-profile.jpg');
     border-radius: 50%;
     overflow: hidden;
+    border-radius:60% 40% 30% 70% / 60% 30% 70% 40% ;
+    animation: morph 6s ease-in-out infinite;
+    transition: all 1s ease-in-out;
+    position: relative;
+    @media (max-width: 760px) {
+      width: 15rem;
+      height: 15rem;
+      margin-right: 7rem;
+    }
+  }
+  @keyframes morph {
+    0%{
+      border-radius:60% 40% 30% 70% / 60% 30% 70% 40% ;
+    }
+    50%{
+      border-radius:30% 60% 70% 40% / 50% 60% 30% 60% ;
+    }
+    100%{
+      border-radius:60% 40% 30% 70% / 60% 30% 70% 40% ;
+    }
   }
   .img{
     max-width: 100%;
@@ -46,6 +71,23 @@
   .iconImage{
     aspect-ratio: 1;
     max-width: 4rem;
+  }
+  .techStack{
+    margin-inline: 8.65rem !important;
+    /* overflow-y: auto; */
+  }
+  .techStack div{
+    padding: auto;
+  }
+  .techStack div img{
+    transition: 1000ms;
+  }
+  .techStack div img:hover{
+    transform: translateY(-1.5rem);
+  }
+  .techStack h5{
+    color: #2d2e32 !important;
+    font-size: 1.5rem !important;
   }
   @media (max-width:1000px) {    
     .header{
