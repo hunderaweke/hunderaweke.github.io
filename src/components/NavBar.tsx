@@ -13,7 +13,7 @@ const NavBar = () => {
             <Nav
               className={`d-lg-flex justify-content-lg-end w-100 ${styles.navLink}`}
             >
-              <Nav.Link className="flex-lg-item" href="">
+              <Nav.Link className="flex-lg-item" href="#home">
                 Home
               </Nav.Link>
               <Nav.Link className="flex-lg-item" href="#about">
